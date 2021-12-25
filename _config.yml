@@ -23,7 +23,7 @@ email: thomaskhuang@ucla.edu
 description: >- # this means to ignore newlines until "baseurl:"
     Please feel free to contact me at my email or check out my profile on LinkedIn
     or GitHub!
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://thomhuang.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 linkedin_username: thomaskhuang
 github_username:  thomhuang
