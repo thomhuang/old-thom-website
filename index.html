@@ -1,0 +1,54 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: home
+---
+
+<style>
+    
+li {
+  list-style-type: none;
+}
+    
+.center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid black;
+  padding: 10px;
+}
+    
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 4%;
+}
+    
+</style>
+
+<body>
+    <div id="intro" style="margin:0% 15% 0% 15%">
+        <h1 style="text-align:center;font-size=35px;font-family:Monaco;">
+            Welcome!
+        </h1>
+        <center><img src="/assets/images/headshot.png" height="auto" width="40%" style="border-radius:100%;border:3px solid #5E4328;" align="bottom"/>
+        <p style="clear:left;font-size:15px;margin:15px 0px 0px 0px">
+        I am a third-year Applied Mathematics student at UCLA pursuing a minor in Statistics and a concentration in Computing. So far, I have have enjoyed working with machine learning, data cleaning/engineering, and algorithms in particular, and hope to work in Software Engineering or Data Science toward the future.
+        </p>
+        
+        <p style="clear:left;font-size:15px;margin:15px 0px 0px 0px">
+        During my free time, I enjoy <a href="/food/">cooking</a>, <a href="/clothes/">clothing</a>, and <a href="/blog-posts/">writing about my ventures</a> into current/future hobbies.   
+        </p>
+    </div>
+        
+    <div class="row">
+      <li><a href="https://www.linkedin.com/in/{{site.linkedin_username}}" target="_blank"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#linkedin' | relative_url }}"></use></svg> <span class="username">LinkedIn</span></a></li>
+      <li><a href="https://github.com/{{site.github_username}}" target="_blank"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg> <span class="username">GitHub</span></a></li>
+      <li><a href="/curr_resume.pdf/" target="_blank"><i class="fa fa-file" style="color:grey;margin:0px 10px 0px 0px"></i><span class="username">Resume</span></a></li>
+      <li><a href="/projects/" target="_blank"><i class="fa fa-desktop" style="color:grey;margin:0px 10px 0px 0px"></i><span class="username">Projects</span></a></li>
+    </div>
+
+
+<body>  
+
+
