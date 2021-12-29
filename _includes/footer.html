@@ -9,26 +9,23 @@
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
           <li class="p-name">
-            {%- if site.author -%}
               {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
             </li>
             {%- if site.email -%}
             <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
             {%- endif -%}
         </ul>
       </div>
-
       <div class="footer-col footer-col-2">
-        {%- include social.html -%}
+        <p>Website Repo: <a href="https://www.github.com/thomhuang/thomhuang.github.io/" target="_blank"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg></a></p>
       </div>
-
       <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
+        <p>{{- site.description | escape }}</p>
       </div>
     </div>
+    </div>
+    
+    
 
   </div>
 
