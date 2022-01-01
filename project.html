@@ -5,18 +5,17 @@ permalink: /projects/
 ---
 
 <div class="page">
-    {%- if site.projects.size > 0 -%}
       <ul class="post-list">
         {%- for project in site.projects -%}
         <li>
-          <h3>
+          <h1>
             <a class="post-link" href="{{ project.url | relative_url }}">
               {{ project.title | escape }}
             </a>
-          </h3>
+          </h1>
         </li>
+        <p class="post-excerpt">{{ project.description | truncate: 160 }}</p>
         {%- endfor -%}
       </ul>
-    {%- endif -%}
 </div>
 

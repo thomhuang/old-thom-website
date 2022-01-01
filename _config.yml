@@ -29,6 +29,14 @@ collections:
   projects:
     output: true
     collections_dir: projects
+  picposts:
+    output: true
+    order:
+        - 2021-04-04-Blog-Post-0.md
+        - 2021-04-12-Blog-Post-1.md
+        - 2021-04-27-Blog-Post-2.md
+        - 2021-05-15-Blog-Post-3.md
+    collections_dir: picposts
 
 # Build settings
 theme: minima

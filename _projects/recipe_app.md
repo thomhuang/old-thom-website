@@ -1,6 +1,7 @@
 ---
 layout: page
 title:  Recipe-App
+description:  An application programmed in Python geared towards the home cook. Our app works to retrieve data from www.SeriousEats.com and utilize the information to query recipes containing specific ingredients/authors/cuisines/etc. directly to the user.
 ---
 <style>
 .center {

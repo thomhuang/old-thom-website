@@ -1,6 +1,7 @@
 ---
 layout: page
 title:  MiniRogue
+description: A dungeon action-adventure game programmed in C++ based on the project specifications of Project 3 in David Smallberg's CS32 in Spring of 2020. The overall objective of the game is to traverse through the dungeon levels to retrieve the golden idol.
 ---
 <style>
 .center {
