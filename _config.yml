@@ -29,6 +29,9 @@ collections:
   projects:
     output: true
     collections_dir: projects
+  tutorials:
+    output: true
+    collections_dir: tutorials
   picposts:
     output: true
     order:
