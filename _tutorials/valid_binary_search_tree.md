@@ -21,15 +21,16 @@ class Node: # Node definition
         self.right = right
 
 def valid_bst(root):
-		if not root:
-				return True
-		if root.left:
-				if root.left.val > root.val:
-						return False
-		if root.right:
-				if root.right.val < root.val:
-						return False
-		return valid_bst(root.left) and valid_bst(root.right)
+    if not root:
+        return True
+    if root.left:
+        if root.left.val > root.val:
+            return False
+    if root.right:
+        if root.right.val < root.val:
+            return False
+            
+    return valid_bst(root.left) and valid_bst(root.right)
 ```
 
 At first glance this may seem like the correct procedure, however we’ll show that this is not the case through an example.
@@ -51,13 +52,13 @@ class Node: # Node definition
 
 def valid_bst(root):
 		def bst(root, lower_limit, upper_limit):
-				if not root:
-						return True
-				if root.val < lower_limit or root.val > upper_limit:
-						return False
-		return bst(root.left, lower_limit, root.val) and bst(root.right, root.val, upper_limit)
+            if not root:
+                return True
+            if root.val < lower_limit or root.val > upper_limit:
+                return False
+        return bst(root.left, lower_limit, root.val) and bst(root.right, root.val, upper_limit)
 
-		return bst(root, float('-inf'), float('inf'))
+    return bst(root, float('-inf'), float('inf'))
 ```
 
 Which is our final solution!
