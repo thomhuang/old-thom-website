@@ -75,3 +75,23 @@ class Solution(object):
 ```
 
 I’m not too sure of the time complexity of converting our `List` to a `Set`, but I would not expect anything more than `O(N)`
+
+There is also a less trivial solution that we have, namely working with hashmaps. Our idea is to traverse through our array `nums`, and add our element `nums[i]` to our hashmap corresponding to some dummy value, let's say `1`. Before we add each element to our hashmap, we can check if our element is *already* in the hashmap, and if so we know we have run into a duplicate value, thus we return `True`. If we iterate through the entirety of `nums` without running into such case, we return `False`. 
+
+This gives the below solution:
+
+```python
+class Solution(object):
+    def containsDuplicate(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: bool
+        """
+        
+        hashmap = {}
+        for i in range(len(nums)):
+            if nums[i] in hashmap:
+                return True
+            hashmap[nums[i]] = 1
+        return False
+```

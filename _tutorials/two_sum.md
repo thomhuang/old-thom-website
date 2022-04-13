@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Two Sum
+date:   2022-01-14 15:00:00 -0800
 description: Array
 ---
 
@@ -78,3 +79,5 @@ class Solution(object):
 				hashmap[nums[i]] = i
 		return []
 ```
+
+
