@@ -40,21 +40,21 @@ This is demonstrated in the below:
 
 ```python
 def days_req(max_weight, weights, d):
-		curr_days = 1
-		capacity = max_weights
-		n = len(weights)
-		i = 0
-		while i < n:
-				if weights[i] <= capacity: 
-						# If weights[i] <= capacity, there is room on the truck, thus 
-						# remove weights[i] from capacity, and move on to the next package
-						capacity -= weights[i]
-						i += 1
-				else:
-					curr_days += 1 # There is no room on the truck, thus we need another day
-					capacity = max_weights # and reset our capacity
+    curr_days = 1
+    capacity = max_weights
+    n = len(weights)
+    i = 0
+    while i < n:
+        if weights[i] <= capacity: 
+            # If weights[i] <= capacity, there is room on the truck, thus 
+            # remove weights[i] from capacity, and move on to the next package
+            capacity -= weights[i]
+            i += 1
+        else:
+            curr_days += 1 # There is no room on the truck, thus we need another day
+            capacity = max_weights # and reset our capacity
 
-		return curr_days <= d # required days <= desired days, return true.
+    return curr_days <= d # required days <= desired days, return true.
 ```
 
 And now that we have finished our logic for our binary decision, we now perform our binary search!
@@ -65,14 +65,14 @@ So, given our `days_req(max_weight, weights, d)`, we can use its logic to determ
 
 ```python
 def shipWithinDays(self, weights, days):
-		min_weight, max_weight = max(weights), sum(weights)
-		res = -1
-		while min_weight <= max_weight:
-				mid = (min_weight + max_weight) // 2
-				if days_req(mid, weights, d):
-						res = mid
-						right = mid - 1
-				else:
-						left = mid + 1
-		return res
+    min_weight, max_weight = max(weights), sum(weights)
+    res = -1
+    while min_weight <= max_weight:
+        mid = (min_weight + max_weight) // 2
+        if days_req(mid, weights, d):
+            res = mid
+            right = mid - 1
+        else:
+            left = mid + 1
+    return res
 ```
