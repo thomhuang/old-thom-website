@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Valid Binary Search Tree"
-date:   2022-02-02 23:00:00 -0800
 categories: website
 ---
 

@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Add Two Numbers"
-date:   2022-02-03 15:00:00 -0800
 categories: website
 ---
 

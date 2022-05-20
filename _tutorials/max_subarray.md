@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Maximum Subarray
-date:   2022-01-22 15:00:00 -0800
 description: Array
 ---
 
